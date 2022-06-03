@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 544px;
+        width: 100%;
+        border: 2px solid red;
+        display: flex;
+        /* flex propertiezs */
+        /* flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+        /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse; */
+        /* for flex direction and wrap both use    flow */
+        /* flex-flow: row wrap-reverse; */
+        justify-content: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+      }
+      .item {
+        background-color: royalblue;
+        border: 2px solid chocolate;
+        margin: 10px;
+        padding: 3px;
+        height: 200px;
+        width: 200px;
+      }
+      #item-1 {
+        /* higher order will show up to later */
+        order: 2;
+        flex-grow: 2;
+        flex-shrink: 2;
+        /* if we flexgrow then when the screen stretches it will stretch to ratio 2 */
+        /* if we flexshrink then when the screen compresses it will stretch to ratio 2 */
+        flex-basis: 260px;
+        /* if flex direction is set to row then flex basis will control its width */
+        /* if flex direction is set to height then flex basis will control its height */
+      }
+      #item-2 {
+        order: 40;
+        flex-grow: 3;
+        flex-shrink: 3;
+      }
+      #item-3 {
+        order: 4;
+        flex: 2 2 340px;
+        /* if we use flex only then{flexgrow flexshrink flexbasis}   (shortcut) */
+        align-self: flex-start;
+        align-self: flex-end;
+        align-self: center;
+        /* align self align the flexbox element wrt y axis */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This is the flexbox tutorial</h1>
+    <div class="container">
+      <div class="item" id="item-1">First Box</div>
+      <div class="item" id="item-2">Second Box</div>
+      <div class="item" id="item-3">Third Box</div>
+      <!-- <div class="item" id="item-4">Fourth box</div>
+      <div class="item" id="item-5">Fifth Box</div>
+      <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+  </body>
+</html>

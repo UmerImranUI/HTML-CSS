@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: royalblue;
+            border: 2px solid black;
+            height: 3000px;
+        }
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+        #box3{
+            /* If you want to change the positions from its relative position */
+            /* position: relative;
+            top: 20px;
+            left: 10px; */
+            /* if you want to change the position of an elemen wrt parent element the use absolute */
+            /* position: relative;
+            top: 40px; */
+                        /* if you want to change the fix the position of an element use fixed */
+            /* position: fixed;
+            right: 100px; */
+            /* if you want to fix the position of an elemen wrt browser the use sticky */
+            position: sticky;
+            top: 0px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

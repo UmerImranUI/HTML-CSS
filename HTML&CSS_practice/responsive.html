@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* em is the unit used for the total of the parent */
+        html{
+            font-size: 25px;
+            /* now 25 will multiply with rem */
+        }
+        .container{
+            /* width: 400px;
+            height: 344px; */
+            width: 100vw;
+            height: 100vh;
+            font-size: 10px;
+            border: 2px solid red;
+        }
+        #one{
+            /* font-size: 3em;
+            padding: 3em; */
+
+        }
+    
+        #two{
+            /* rem is used for the html size */
+            /* font-size: 3rem;
+            padding: 3rem; */
+
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 id="one">This is first heading</h1>
+    <h1 id="two">This is second heading</h1>
+    <h1 id="three">This is third heading</h1>
+</div>
+</body>
+</html>

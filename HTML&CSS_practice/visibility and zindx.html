@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY UMEr</title>
+</head>
+<style>
+    .box{
+        border: 2px solid orangered;
+        width: 170px;
+        height: 170px;
+    }
+    #box1{
+        background-color: orchid;
+        position: relative;top: 32px;
+        z-index: 35px;
+    }
+    #box2{
+        background-color: rgb(98, 17, 96);
+        /* visibility: hidden;  to hide the element but not the space*/
+        /* display: none  to hide the element with the space; */
+        position: relative;top: 50px;
+        z-index: -1px;
+        /* z-iindex is used with poisition and the higher order z index will come t front */
+    }
+    #box3{
+        background-color: rgb(4, 52, 75);
+    }
+    #box4{
+        background-color: rgb(131, 228, 4);
+    }
+</style>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

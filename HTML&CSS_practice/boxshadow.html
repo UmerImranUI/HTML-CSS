@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            padding: 32px 49px;
+    margin: 23px 12px;
+    border: 2px solid red;
+    background-color: rgb(253, 179, 42);
+    box-shadow: 5px 13px 6px 2px rgb(24, 192, 24, 0.5);
+    /* in rgb alpha is usef for opacity */
+    /* box shadow: x,y,blur,spreading blur */
+    box-shadow: inset 3px 5px green;
+    box-shadow:3px 5px green 4px 6px red ;
+        }
+        .card h2{
+            text-shadow:3px 2px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++course </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sit repellat in quo reiciendis dolore eos! Facilis eligendi soluta debitis pariatur excepturi blanditiis incidunt sit accusantium quidem! Cupiditate minima unde architecto expedita eaque incidunt.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Rhis is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas expedita eos ea. Sit soluta possimus inventore corporis doloribus eius consectetur magni, natus maxime eos cum minus excepturi qui nobis fuga pariatur. Officia, qui laudantium.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo esse quas sequi asperiores veniam, dolorum corrupti explicabo, consectetur incidunt quae tenetur magni quidem autem obcaecati ex distinctio magnam at aspernatur suscipit laborum laboriosam dignissimos.</p>
+        </div>
+    </div>
+</body>
+</html>
